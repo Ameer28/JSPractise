@@ -178,7 +178,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 //     console.log(firstName + ' is a man.');
 // }
 
-/*******The Terbary Operator and Switch Statements *****************/
+/*******The Ternary Operator and Switch Statements *****************/
 
 var firstName = 'John';
 var age = 14;
@@ -227,3 +227,24 @@ switch (true) {
     default:
         console.log(firstName + ' is a man.');
 }
+
+/***********Truthy and Falsy values and equality operators *********/
+
+// falsy values: undefined, null, 0 , '', NaN
+// truthy values: NOT falsy values
+
+var height;
+
+height = 23;
+
+if (height || height === 0) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
+
+// Equality operators
+if(height == '23') {
+    console.log('The == operator does type coercion!');
+}
+
