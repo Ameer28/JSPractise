@@ -326,3 +326,78 @@ var pointsJohn = pointsScored(555);
 var pointsMike = pointsScored(832);
 var pointsJane = pointsScored(1001);
 console.log(pointsJohn, pointsMike, pointsJane);
+
+/***************Function Statements and Expressions ****************/
+
+// Function declaration
+// function whatDoYouDo(job, firstName) {}
+
+// Function expression
+var whatDoYouDo = function (job, firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon.';
+        case 'designer':
+            return firstName + ' designs beautiful websites';
+        default:
+            return firstName + ' does something else';
+    }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
+
+var totalPoints = function(firstName, points){
+    return 999 - points;
+}
+
+console.log(totalPoints('John', 555),totalPoints('Mike', 832),totalPoints('Jane', 1001));
+
+
+/************************** Arrays *********************************/
+
+var names = ['John','Mark','Jane'];
+var years = new Array(1990,1969,1948);
+
+// Initialize new array
+console.log(names);
+console.log(names.length);
+
+// Mutate array data
+names[1] = 'Ben';
+names[names.length] = 'Mary';
+console.log(names);
+
+// Different data types
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+john.push('blue');
+john.unshift('Mr.');
+console.log(john);
+
+john.pop();
+john.pop();
+john.shift();
+console.log(john);
+
+console.log(john.indexOf(23));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
+console.log(isDesigner);
+
+/************************* Coding Challenge 3 **********************/
+
+/*
+John and his family went on a holiday and went to 3 different restaurants. The bills where $124, $48 and $268.
+
+To top the waiter a fair amout, John created a simple tip calculator (as a function). He likes to tip 20% of the bill when the bill is less than $50, 15% when the bill is between $50 and $200, and 10% if the bill is more than $200.
+
+In the end, John would like to have 2 arrays:
+1) Containing all three tips (one for each bill)
+2) Containing all three final paid amounts (bill + tip).
+
+(NOTE: To calculate 20% of a value, simply multiply if with 20/100 = 0.2)
+*/
