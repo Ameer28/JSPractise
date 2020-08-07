@@ -327,6 +327,67 @@ var pointsMike = pointsScored(832);
 var pointsJane = pointsScored(1001);
 console.log(pointsJohn, pointsMike, pointsJane);
 
+function BMI(weight,height){
+    return (weight * height) / 2;
+}
+
+var bmiJohn = BMI(65,1.72);
+var bmiMike = BMI(78,1.76);
+var bmiJane = BMI(46,1.51);
+console.log(('John\'s BMI is ' + bmiJohn + ', ' + 'Mike\'s BMI is ' + bmiMike + ', ' + 'Jane\'s BMI is ' + bmiJane + ', '));
+
+function profit(income,expenditure){
+    return income - expenditure;
+}
+
+var balance = profit(15000,8888);
+console.log('Account Available Balance is: ' + balance + '. ');
+
+//Personal Practice
+
+// function testExample(a) {
+//     var greeting = 'Hi! My name is ' + a;
+//     return greeting;
+// }
+
+// var name = "Ameer";
+// console.log(testExample(name));
+
+// var testExample = function(a){
+//     var greeting = 'Hi! My name is ' + a;
+//     return greeting;
+// }
+
+// var a = 'Ameer';
+// console.log(testExample(a));
+
+// (function() {
+//     var greeting = 'Hi! My name is Ameer';
+//     console.log(greeting);
+// }())
+
+// testExample()
+
+// function testExample(a){
+//     var greeting = 'Hi! My name is ' + a;
+//     return greeting;
+// }
+// var name = "Ameer"
+// console.log(testExample(name));
+
+// var testExample = function(a) {
+//     var greeting = 'Hi! My name is ' + a;
+//     return greeting;
+// }
+
+// var a = 'Ameer';
+// console.log(testExample(a));
+
+(function(){
+    var greeting = 'Hi! My name is Ameer';
+    console.log(greeting);
+}())
+
 /***************Function Statements and Expressions ****************/
 
 // Function declaration
@@ -355,7 +416,6 @@ var totalPoints = function(firstName, points){
 }
 
 console.log(totalPoints('John', 555),totalPoints('Mike', 832),totalPoints('Jane', 1001));
-
 
 /************************** Arrays *********************************/
 
