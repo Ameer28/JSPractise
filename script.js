@@ -383,36 +383,59 @@ console.log('Account Available Balance is: ' + balance + '. ');
 // var a = 'Ameer';
 // console.log(testExample(a));
 
-(function(){
-    var greeting = 'Hi! My name is Ameer';
-    console.log(greeting);
-}())
+// (function(){
+//     var greeting = 'Hi! My name is Ameer';
+//     console.log(greeting);
+// }())
 
-function calculateAge(birthYear){
-    return 2018 - birthYear;
-}
+// function calculateAge(birthYear){
+//     return 2018 - birthYear;
+// }
 
-var ageJohn = calculateAge(1990);
-var ageMike = calculateAge(1948);
-var ageJane = calculateAge(1969);
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1948);
+// var ageJane = calculateAge(1969);
 
-console.log(ageJohn,ageMike,ageJane);
+// console.log(ageJohn,ageMike,ageJane);
 
-function yearsUntilRetirement(year, firstName){
-    var age = calculateAge(year);
-    var retirement = 65 - age;
+// function yearsUntilRetirement(year, firstName){
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
 
-    if (retirement > 0){
-        console.log(firstName + ' retires in ' + retirement + ' years.');
-    } else {
-        console.log(firstName + ' is already retired.')
-    }
+//     if (retirement > 0){
+//         console.log(firstName + ' retires in ' + retirement + ' years.');
+//     } else {
+//         console.log(firstName + ' is already retired.')
+//     }
     
+// }
+
+// yearsUntilRetirement(1990,'John');
+// yearsUntilRetirement(1948,'Mike');
+// yearsUntilRetirement(1969,'Jane');
+
+function calculatePoints(pointsEarned){
+    return 9999 - pointsEarned;
 }
 
-yearsUntilRetirement(1990,'John');
-yearsUntilRetirement(1948,'Mike');
-yearsUntilRetirement(1969,'Jane');
+var pointsJohn = calculatePoints(1879);
+var pointsMike = calculatePoints(8899);
+var pointsJane = calculatePoints(10001);
+
+function totalPoints (firstName, points){
+    var earned = calculatePoints(points);
+    var earnedPoints = 9999 - earned;
+
+    if(earnedPoints > 1000){
+        console.log(firstName + ' has earned ' + earnedPoints + '. ');
+    } else {
+        console.log(firstName + ' is the winner!.')
+    }
+}
+
+totalPoints('John',1879);
+totalPoints('Mike',8899);
+totalPoints('Jane',10001);
 
 /***************Function Statements and Expressions ****************/
 
