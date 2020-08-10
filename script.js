@@ -383,36 +383,36 @@ console.log('Account Available Balance is: ' + balance + '. ');
 // var a = 'Ameer';
 // console.log(testExample(a));
 
-// (function(){
-//     var greeting = 'Hi! My name is Ameer';
-//     console.log(greeting);
-// }())
+(function(){
+    var greeting = 'Hi! My name is Ameer';
+    console.log(greeting);
+}())
 
-// function calculateAge(birthYear){
-//     return 2018 - birthYear;
-// }
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
 
-// var ageJohn = calculateAge(1990);
-// var ageMike = calculateAge(1948);
-// var ageJane = calculateAge(1969);
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
 
-// console.log(ageJohn,ageMike,ageJane);
+console.log(ageJohn,ageMike,ageJane);
 
-// function yearsUntilRetirement(year, firstName){
-//     var age = calculateAge(year);
-//     var retirement = 65 - age;
+function yearsUntilRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
 
-//     if (retirement > 0){
-//         console.log(firstName + ' retires in ' + retirement + ' years.');
-//     } else {
-//         console.log(firstName + ' is already retired.')
-//     }
+    if (retirement > 0){
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' is already retired.')
+    }
     
-// }
+}
 
-// yearsUntilRetirement(1990,'John');
-// yearsUntilRetirement(1948,'Mike');
-// yearsUntilRetirement(1969,'Jane');
+yearsUntilRetirement(1990,'John');
+yearsUntilRetirement(1948,'Mike');
+yearsUntilRetirement(1969,'Jane');
 
 function calculatePoints(pointsEarned){
     return 9999 - pointsEarned;
@@ -562,3 +562,24 @@ In the end, John would like to have 2 arrays:
 (NOTE: To calculate 20% of a value, simply multiply if with 20/100 = 0.2)
 */
 
+function tipCalculator(bills){
+    var percentage;
+    if (bills < 50) {
+        return percentage = bills * 0.2;
+    } else if (bills > 50 && bills < 200) {
+        return percentage = bills * 0.15;
+    } else {
+        return percentage = bills * 0.10;
+    }
+}
+
+var bills = [124,48,268];
+var tips = [tipCalculator(bills[0]),
+            tipCalculator(bills[1]),
+            tipCalculator(bills[2])];
+
+var finalValues =   [bills[0] + tips[0],
+                    bills[1] + tips[1],
+                    bills[2] + tips[2]];
+
+console.log(tips,finalValues);
