@@ -437,6 +437,16 @@ totalPoints('John',1879);
 totalPoints('Mike',8899);
 totalPoints('Jane',10001);
 
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJohn,ageMike,ageJane);
+
+
 /***************Function Statements and Expressions ****************/
 
 // Function declaration
@@ -812,3 +822,97 @@ Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the 
 7. Calculate the average tip for each family
 8. Log to the console which family paud the highest tips on average
 */
+
+/************************** Functions Recap ************************/
+
+function calculateAge(birthYear){
+    return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJohn,ageMike,ageJane);
+
+function yearsUntilRetirement(year,firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if(retirement > 0){
+        console.log(firstName + ' retires in ' + retirement + ' years.')
+    } else {
+        console.log(firstName + ' is already retired.')
+    }
+    
+}
+
+yearsUntilRetirement(1990,'John');
+yearsUntilRetirement(1948,'Mike');
+yearsUntilRetirement(1969,'Jane');
+
+function calculateAge (birthYear){
+    return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+
+console.log(ageJohn, ageMike, ageJane);
+
+function yearsUntilRetirement(year,firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if(retirement > 0) {
+        console.log(firstName + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(firstName + ' already retired.')
+    }
+    
+}
+
+yearsUntilRetirement(1990,'John');
+yearsUntilRetirement(1948,'Mike');
+yearsUntilRetirement(1969,'Jane');
+
+function calculatePoints(points){
+    return 9999 - points;
+}
+
+var pointsJohn = calculatePoints(8833);
+console.log(pointsJohn);
+
+/*******************************************************************/
+
+function yearGraduated(year){
+    return 2020 - year;
+}
+
+var graduateJohn = yearGraduated(2016);
+console.log(graduateJohn);
+
+function shorterGraduation(graduation){
+    var duration = yearGraduated(year);
+}
+
+// Function declaration
+// function whatDoYouDo(job,firstName) {}
+
+// Function expression
+var whatDoYouDo = function(job,firstName) {
+    switch(job) {
+        case 'teacher':
+            return firstName + ' teaches kids how to code.';
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon.';
+        case 'designer':
+            return firstName + ' designs beautiful websites.'
+        default:
+            return firstName + ' does something else.';
+    }
+}
+
+console.log(whatDoYouDo('teacher','John'));
+console.log(whatDoYouDo('designer','Jane'));
+console.log(whatDoYouDo('retired','Mark'));
