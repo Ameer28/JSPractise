@@ -942,16 +942,17 @@ jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
 console.log(jane);
 
-// Function
-// Function expression
-var whatDoYouDo = function(job,firstName) {
+// // Function
+// // Function expression
+
+var whatDoYouDo = function(job,firstName){
     switch(job) {
         case 'teacher':
-            return firstName + ' teaches kids how to code.';
+            return firstName + ' teacher kids how to code.';
         case 'driver':
             return firstName + ' drives a cab in Lisbon.';
         case 'designer':
-            return firstName + ' designs beautiful websites.'
+            return firstName + ' designs beautiful websites.';
         default:
             return firstName + ' does something else.';
     }
@@ -960,3 +961,35 @@ var whatDoYouDo = function(job,firstName) {
 console.log(whatDoYouDo('teacher','John'));
 console.log(whatDoYouDo('designer','Jane'));
 console.log(whatDoYouDo('retired','Mark'));
+
+var whatDoYouDo = function(job,firstName){
+    switch(job){
+        case 'teacher':
+            return firstName + ' teaches kids hiow to code.';
+        case 'driver':
+            return firstName + ' drives a cab in Lisbon.';
+        case 'designer':
+            return firstName + ' designs beautiful websites.';
+        default:
+            return firstName + ' does something else.';
+    }
+}
+
+console.log(whatDoYouDo('teacher','John'));
+console.log(whatDoYouDo('designer','Jane'));
+console.log(whatDoYouDo('retired','Mark'));
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane','Mark','Bob','Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function(){
+        var age = console.log(2020 - birthYear);
+            return calcAge;
+    }
+};
+
+console.log('Hi! My name is ' + john.firstName + ', I\'m a ' + john.job + ' who is ' + john.age + ' years old.');
