@@ -19,7 +19,7 @@
 // var johnMark = 'John and Mark';
 // var if = 23;
 
-/*******************Variable mutation and type coercion ************/
+/*****************Variable mutation and type coercion ************/
 // var firstName = 'John';
 // var age = 28;
 
@@ -96,7 +96,7 @@
 // x--;
 // console.log(x);
 
-/************************Coding Challenge 1 ************************/
+/***********************Coding Challenge 1 ************************/
 /*
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height).(mass in kg and height in meter).
 
@@ -123,7 +123,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 // moreBmi = bmiMark > bmiJohn;
 // console.log('Is Mark\'s BMI highter than John\'s? ' + moreBmi);
 
-/******************If / Else Statements ****************************/
+/******************If / Else Statements ***************************/
 
 // var firstName = 'John';
 // var civilStatus = 'single';
@@ -163,7 +163,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 // moreBmi = bmiMark > bmiJohn;
 // console.log('Is Mark\'s BMI highter than John\'s? ' + moreBmi);
 
-/**************************Boolean Logic ***************************/
+/*************************Boolean Logic ***************************/
 
 // var firstName = 'John';
 // var age = 20;
@@ -178,7 +178,7 @@ Mark and John are trying to compare their BMI (Body Mass Index), which is calcul
 //     console.log(firstName + ' is a man.');
 // }
 
-/*******The Ternary Operator and Switch Statements *****************/
+/*******The Ternary Operator and Switch Statements ****************/
 
 var firstName = 'John';
 var age = 14;
@@ -228,7 +228,7 @@ switch (true) {
         console.log(firstName + ' is a man.');
 }
 
-/***********Truthy and Falsy values and equality operators *********/
+/**********Truthy and Falsy values and equality operators *********/
 
 // falsy values: undefined, null, 0 , '', NaN
 // truthy values: NOT falsy values
@@ -248,7 +248,7 @@ if(height == '23') {
     console.log('The == operator does type coercion!');
 }
 
-/********************* CODING CHANLLENGE 2 *************************/
+/********************* CODING CHANLLENGE 2 ************************/
 
 /*
 John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
@@ -290,7 +290,7 @@ if (johnTeamScoreAverage > markTeamScoreAverage && johnTeamScoreAverage > maryTe
     console.log('There is a draw');
 }
 
-/**************************Functions *******************************/
+/*************************Functions *******************************/
 
 function calculateAge(birthYear) {
     return 2018 - birthYear;
@@ -447,7 +447,7 @@ var ageJane = calculateAge(1969);
 console.log(ageJohn,ageMike,ageJane);
 
 
-/***************Function Statements and Expressions ****************/
+/***************Function Statements and Expressions ***************/
 
 // Function declaration
 // function whatDoYouDo(job, firstName) {}
@@ -496,7 +496,7 @@ console.log(whatDoYouDo('teacher','John'));
 console.log(whatDoYouDo('designer','Jane'));
 console.log(whatDoYouDo('retired','Mark'));
 
-/************************** Arrays *********************************/
+/************************* Arrays *********************************/
 
 var names = ['John','Mark','Jane'];
 var years = new Array(1990,1969,1948);
@@ -558,7 +558,7 @@ console.log(john.indexOf(23));
 var isDesigner = john.indexOf('desginer') === -1 ? 'John is NOT a designer':'John IS a designer';
 console.log(isDesigner);
 
-/************************* Coding Challenge 3 **********************/
+/************************* Coding Challenge 3 *********************/
 
 /*
 John and his family went on a holiday and went to 3 different restaurants. The bills where $124, $48 and $268.
@@ -594,7 +594,7 @@ var finalValues =   [bills[0] + tips[0],
 
 console.log(tips,finalValues);
 
-/******************** Objects and Properties ***********************/
+/******************** Objects and Properties **********************/
 
 var john = {
     firstName: 'John',
@@ -642,7 +642,7 @@ jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
 console.log(jane);
 
-/************************ Objects and Methods **********************/
+/************************ Objects and Methods *********************/
 
 var john = {
     firstName: 'John',
@@ -674,7 +674,7 @@ var john = {
 john.calcAge();
 console.log(john);
 
-/************************* Coding Challenge 4 **********************/
+/************************* Coding Challenge 4 *********************/
 
 /*
 Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
@@ -717,7 +717,7 @@ if (john.BMI > mark.BMI){
     console.log('Both of them have the same BMI');
 }
 
-/*********************** Loops and iteration ***********************/
+/*********************** Loops and iteration **********************/
 
 // For Loop
 for (var i = 1; i <= 20; i += 2){
@@ -800,30 +800,7 @@ for(var i = john.length - 1; i >= 0; i--){
     console.log(john[i]);
 }
 
-/*********************** Coding Challenge 5 ************************/
-
-/*
-Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!
-
-This time, John and his family went to 5 different restaurants. The bills were $124, $48, $268,$180 and $42.
-John likes to tip 20% of the bill is between $50 and $200, and 10% if the bill is more than $200.
-
-Implement a tip calculator using objects and loops:
-1. Create an object with an array for the bill values
-2. Add a method to calculate the tip
-3. This method should include a loop to iterate over all the paid bills and do the tip calculations
-4. As an output, create 1) a new array containing all tips, and 2) an array containing final paid amounts (bill + tip). HINT: Start with two empty arrays [] as properties and then fill them up in the loop.
-
-EXTRA AFTER FINISHING: Mark's famly also went on a holiday, going to 4 different restaraunts. The bills were $77, $375, $110, and $45.
-Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the bill is between $100 and $300, and 25% if the bill is more than $300(different than John).
-
-5. Implement the same functionality as before, this time using Mark's tipping rules
-6. Create a function (not a method) to calculate the average of a given array of tips. HINT: Loop over the array, and in each interation store the current sum in a variable (starting from 0). After you ahve the sum of the array, divide it by the number of elements in it (that's how you calculate the average)
-7. Calculate the average tip for each family
-8. Log to the console which family paud the highest tips on average
-*/
-
-/************************** Functions Recap ************************/
+/************************* Functions Recap ************************/
 
 function calculateAge(birthYear){
     return 2018 - birthYear;
@@ -883,7 +860,7 @@ function calculatePoints(points){
 var pointsJohn = calculatePoints(8833);
 console.log(pointsJohn);
 
-/*******************************************************************/
+/******************************************************************/
 
 function yearGraduated(year){
     return 2020 - year;
@@ -917,7 +894,7 @@ console.log(whatDoYouDo('teacher','John'));
 console.log(whatDoYouDo('designer','Jane'));
 console.log(whatDoYouDo('retired','Mark'));
 
-/***************************** Objects *****************************/
+/**************************** Objects *****************************/
 
 var john = {
     firstName: 'John',
@@ -993,3 +970,86 @@ var john = {
 };
 
 console.log('Hi! My name is ' + john.firstName + ', I\'m a ' + john.job + ' who is ' + john.age + ' years old.');
+
+/********************** Loops & Interation ************************/
+
+for (var i = 0; i < 10; i++){
+    console.log(i);
+}
+
+// i = 0, 0 < 10 true, log i to console, i++
+// i = 1, 1, 01 true, log i to the console, i++
+//...
+// i = 9, 9 < 10 true, log i to the console, i++
+// i = 10, 10 < 10, FALSE, exit the loop!
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+for (var i = 0; i < john.length; i ++){
+    console.log(john[i]);
+}
+
+// while Loop
+var i = 0;
+while(i < john.length){
+    console.log(john[i]);
+    i++;
+}
+
+// continue and break statements
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+for (var i = 0; i < john.length; i++){
+    if(typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+
+// Looping backwards
+for (var i = john.length - 1; i >= 0; i--){
+    console.log(john[i]);
+}
+
+for (var i = john.length - 1; i >= 0; i--){
+    console.log(john[i]);
+}
+
+var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
+for(var i = 0; i < john.length; i++) {
+    if(typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+
+var i = 0;
+while(i < john.length){
+    console.log(john[i]);
+    i++;
+}
+
+/*********************** Coding Challenge 5 ***********************/
+
+/*
+Remember the tip calculator challenge? Let's create a more advanced version using everything we learned!
+
+This time, John and his family went to 5 different restaurants. The bills were $124, $48, $268, $180 and $42.
+John likes to tip 20% of the bill is between $50 and $200, and 10% if the bill is more than $200.
+
+Implement a tip calculator using objects and loops:
+1. Create an object with an array for the bill values
+2. Add a method to calculate the tip
+3. This method should include a loop to iterate over all the paid bills and do the tip calculations
+4. As an output, create 1) a new array containing all tips, and 2) an array containing final paid amounts (bill + tip). HINT: Start with two empty arrays [] as properties and then fill them up in the loop.
+
+EXTRA AFTER FINISHING: Mark's famly also went on a holiday, going to 4 different restaraunts. The bills were $77, $375, $110, and $45.
+Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the bill is between $100 and $300, and 25% if the bill is more than $300(different than John).
+
+5. Implement the same functionality as before, this time using Mark's tipping rules
+6. Create a function (not a method) to calculate the average of a given array of tips. HINT: Loop over the array, and in each interation store the current sum in a variable (starting from 0). After you ahve the sum of the array, divide it by the number of elements in it (that's how you calculate the average)
+7. Calculate the average tip for each family
+8. Log to the console which family paud the highest tips on average
+*/
+
+var johnBills = {
+    bills: [124, 48, 268, 180, 42],
+    calcTip: function(){
+        
+    }
+};
