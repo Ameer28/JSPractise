@@ -1375,14 +1375,20 @@ console.log(whatDoYouDo('retired', 'Mark'));
 
 /************************************* Arrays *************************************/
 
+// Initialize new array
 var names = ['John', 'Mark', 'Jane'];
 var years = new Array(1990, 1969, 1948);
 
 console.log(names);
 console.log(names.length);
 
+// Mutate array data
 names[1] = 'Ben';
-names[5] = 'Mary';
-
+names[names.length] = 'Mary';
 console.log(names);
 
+// Different data types
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');
+console.log(john);
